@@ -59,6 +59,7 @@ td.hbr
     background-repeat: no-repeat;
     background-position: 10px;
     padding-left: 25px;
+  
 }
 td.menuitem
 {
@@ -103,4 +104,83 @@ td.btmenuitem
     background-repeat: no-repeat;
     vertical-align: middle;
     text-align: center;
+}
+table.newstable
+{
+    width: 100%;
+}
+
+td.nesitem
+{
+    background-image: url(images/newsitem_bg.PNG);
+    background-repeat: repeat-x;
+    border: 1px solid silver;
+    padding: 10px;
+    text-align: justify;
+}
+h2.hdr2
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    color: #c63c3c;
+    margin-bottom: 7px;
+}
+a 
+{
+text-decoration: none;
+color: #c63c3c;
+}
+
+table.hbrtad
+{
+    background-image: url(images/hdrtab_bg.PNG);
+    background-color: #dce1e9;
+    height: 37px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.form
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 5px 0px 5px 0px;
+}
+
+td.formtext
+{
+    padding: 5px 5px 5px 15px;
+    font-weight: bold;
+    width: 20%;
+}
+td.forminpute
+{
+    padding: 5px 15px 5px 5px;
+    width: 30%;
+}
+input.submit
+{
+    background-color: #dddedf;
+    font-weight: bold;
+    width: 100%;
+}
+select.input
+{
+    width: 100%;
+}
+table.content
+ {
+    border-collapse: collapse;
+    margin: 6px 8px 8px 12px;
+}
+td.image 
+{
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+img.border 
+{
+    border: 1px solid silver;
 }
