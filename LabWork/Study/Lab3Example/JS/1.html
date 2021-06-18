@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS1</title>
+    <script language="JavaScript" type="text/javascript" src="script.js"></script>
+    <script language="JavaScript" type="text/javascript" src="script1.js"></script>
+    <link type="text/css" href="style.css" rel="stylesheet">
+</head>
+<body>
+<form name="form1">
+    Введите длину прямоугольника <input type="text" name="t1" size="10"><br><br>
+    Введите ширину прямоугольника <input type="text" name="t2" size="10"><br><br>
+    <input type="button" name="b1" value="Вычислить" onclick="areaRectangle(form1)"><br><br>
+    Площадь прямоугольника рован <input type="text" name="result" size="10">
+</form>
+<div onclick="showMessage()">Щелкни меня</div>
+
+<table>
+    <tr>
+        <td>
+        <div id="red" onclick="message('КРАСНЫЙ')"></div>
+        </td>
+        <td>
+            <div id="green" onclick="message('green')"></div>
+        </td>
+        <td>
+            <div id="blue" onclick="message('blue')"></div>
+        </td>
+    </tr>
+</table>
+
+<form name="forma2">
+    <textarea name="desc" cols=45 rows=4></textarea>
+</form>
+
+<ul>
+    <li onMouseOver="showDesc(forma2,'Малина обыкновенная — кустарник'+
+    'с многолетним корневищем, из которого развиваются двухгодичные '+
+    ' надземные стебли высотой до полутора метров.');"
+        onMouseOut="delet(forma2);">Малина</li>
+
+    <li onMouseOver="showDesc(forma2,'Черника—кустарничек высотой 15—30 см.'+
+    'Ветви отходят от главного стволика под острыми углами.');"
+        onMouseOut="delet(forma2);">Черника</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5</title>
+</head>
+<body>
+<FORM action="somesite.com/cgi-bin/proc.exe">
+    <H1> Регистрация почтового ящика </H1>
+    <P>
+    <FIELDSET>
+        <LEGEND>Персональная информация</LEGEND>
+        Фамилия: <INPUT name="personal_lastname" type="text" tabindex=”1”> <BR>
+        Имя: <INPUT name="personal_firstname" type="text" tabindex=”2"> <BR>
+    </FIELDSET>
+    <FIELDSET>
+        <LEGEND>Информация о почтовом ящике</LEGEND>
+        Адрес: <INPUT name="mail_address" tabindex="3"> <BR>
+        Пароль: <INPUT name="mail_password" type = "password" tabindex="4"> <BR>
+        Подтверждение пароля: <INPUT name="mail_password" type = "password" tabindex="5">
+    </FIELDSET>
+    <FIELDSET>
+        <LEGEND>Дополнительные сведения</LEGEND>
+        Желаете получать рекламные рассылки?
+        <INPUT name="add_goods" type="radio" value="Yes" tabindex="6">Дa
+        <INPUT name="add_goods" type="radio" checked value="No" tabindex="7">Heт <BR>
+        Желаете получать прогноз погоды на каждый день?
+        <INPUT name="add_weather" type="radio" value="Yes" tabindex="8"> Дa
+        <INPUT name="add_weather" type="radio" checked value="No" tabindex="9">Heт <BR>
+    </FIELDSET>
+    </P>
+    <P>
+        <INPUT type = "submit" value = "Регистрация" tabindex = "10">
+        <INPUT type = "reset" value = "Сброс" tabindex = "11">
+    </P>
+</FORM>
+</body>
+</html>
