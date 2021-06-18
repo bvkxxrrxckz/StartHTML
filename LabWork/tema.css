@@ -57,10 +57,14 @@ body
 /*Контент*/
 #content
 {
-    font-size: 5;
     border: 1px solid #000000;
     width: 50%;
     display: inline-block;
+}
+#content p
+{
+    text-align: left;
+    padding: 2% 0 0 0;
 }
 #content ul
 {
@@ -82,3 +86,8 @@ body
     
 }
 
+/*Таблица*/
+/*...*/
+
+/*Футер*/
+/*...*/
