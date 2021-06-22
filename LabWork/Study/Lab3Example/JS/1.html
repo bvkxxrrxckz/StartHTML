@@ -44,5 +44,42 @@
     'Ветви отходят от главного стволика под острыми углами.');"
         onMouseOut="delet(forma2);">Черника</li>
 </ul>
+
+<table id = "tt" class = "menu">
+    <!--Первый пункт меню-->
+    <tr id = "item1" class = "item" onclick = "item1_click()" onMouseOver =
+            "item1.className = 'selected'" onMouseOut = "item1.className = 'item'">
+        <td> Первый пункт меню </td>
+    </tr>
+    <!--Второй пункт меню-->
+    <tr id = "item2" class = "item" onclick="item2_click()" onMouseOver =
+            "item2.className = 'selected'" onMouseOut = "item2.className = 'item'">
+        <td> Второй пункт меню </td>
+    </tr>
+    <!--Третий пункт меню-->
+    <tr id = "item3" class = "item" onclick="item3_click()" onMouseOver =
+            "item3.className = 'selected'" onMouseOut = "item2.className = 'item'">
+        <td>Третий пункт меню </td>
+    </tr>
+</table>
+
+<form name="form3">
+    <input type="button" value="Время" onclick="nTime(form3)">
+    <input type="text" size="10" name="res">
+</form>
+
+<form name="form4">
+    <input type ="button" value="Дата" onclick="nDate(form4)" >
+    <input type="text" size="15" name="res">
+</form>
+<form name=clock>
+    <input type=text size=15 name=full>
+</form>
+
+<script language="JavaScript">
+    fulltime();
+</script>
+
+
 </body>
 </html>

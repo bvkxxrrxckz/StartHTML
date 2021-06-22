@@ -16,3 +16,16 @@
 {
     background: blue;
 }
+
+.item 
+{
+    background-color: rgb(170, 170,170);
+}
+.selected 
+{
+    background-color: magenta;
+}
+.menu 
+{
+    border-style: ridge;
+} 
