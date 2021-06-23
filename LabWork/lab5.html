@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Работа с jQuery</title>
+    <script src="script/jQuery.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            $("#b1").click(function ()
+            {
+                $(".MsoNormal:odd").hide();
+            })
+            $("#b2").click( function ()
+            {
+                $(".MsoNormal:odd").show();
+            })
+            
+        })
+    </script>
+</head>
+<body>
+<h2> this is a heading</h2>
+<p class="MsoNormal">this is a paragraph</p>
+<p class="MsoNormal">this is a anouther paragraph</p>
+<p class="MsoNormal">this is a ЕЩЕ paragraph</p>
+<p class="MsoNormal">this is a  ЕЩЕ + ЕЩЕ anouther paragraph</p>
+
+<button id="b1"> Click me (hide)</button>
+<button id="b2">Click me (show)</button>
+</body>
+</html>
