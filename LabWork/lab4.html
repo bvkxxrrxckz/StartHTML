@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Лабораторная 4</title>
+<script type="text/javascript">
+function formula(obj)
+{
+    var s=/^[а-яА-Я]+$/;
+    if ((s.test(obj.n.value))||(s.test(obj.n1.value))||(s.test(obj.n2.value)) )
+    {
+    alert("Проблем нет с ФИО");
+    }
+    else 
+    {
+    alert("Ошибка с фио");
+    }
+    
+    var s1 =/^\d[\d\(\)\ -]{4,14}\d$/;
+    if (s1.test(obj.c.value))
+    {
+        alert("Проблем нет с контактами ");
+    }
+    else
+    {
+        alert("Ошибка с контакт");
+    }
+    
+    var s2=/^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i
+    if(s2.test(obj.c1.value))
+    {
+        alert("Проблем нет с почтой ");
+    }
+    else
+    {
+        alert("Ошибка с почтой");
+    }
+
+}
+</script>
+</head>
+<body>
+<form name="forma4">
+<FIELDSET>
+<table>
+<LEGEND>Личные данные</LEGEND>
+    <tr>
+    <td>Имя: </td>
+<td><input type="text" name="n" size="10" maxlength="15"></td>
+    </tr>
+    <tr>
+        <td>Фамилия: </td>
+        <td><input type="text" name="n1" size="10" maxlength="15"></td>
+    </tr>
+    <tr>
+        <td>Отчество: </td>
+        <td><input type="text" name="n2" size="10" maxlength="15"></td>
+    </tr>
+</table>
+</FIELDSET>
+    
+    <fieldset>
+        <table>
+            <legend> Контактные данные</legend>
+            <tr>
+                <td>Номер телефона: </td>
+                <td><input type="text" name="c" size="10" maxlength="13"></td>
+            </tr>
+            <tr>
+                <td>Электронный адрес: </td>
+                <td><input type="text" name="c1" size="10"></td>
+            </tr>
+        </table>
+    </fieldset>
+    
+<input type="button" value="Проверить данные"
+onClick="formula(forma4);">
+</form>
+</body>
+</html>
