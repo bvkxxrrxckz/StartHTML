@@ -15,6 +15,19 @@
             $("td").click(function () {
                 $(this).hide();
             })
+            $("#b3").click(function () {
+                timer = setTimeout(function () {
+                    $("#div1").fadeIn(3000);
+
+                    $("#div2").fadeOut(3000).delay(1000);
+
+                    $("#div2").fadeIn(3000);
+
+                    $("#div1").fadeOut(3000)
+
+                    $("#b3").click();
+                },100);
+            })
         })
     </script>
 </head>
@@ -37,6 +50,11 @@
         <td>2.2</td>
     </tr>
 </table>
+<br>
+<button id="b3"> Мерцалка</button>
+<button id="b4"> Стоп мерцалки</button>
+<div id="div1" style="width: 80px; height: 80px; display: none; background-color: red"></div><br>
+<div id="div2" style="width: 80px; height: 80px; display: none; background-color: green"></div>
 
 </body>
 </html>
