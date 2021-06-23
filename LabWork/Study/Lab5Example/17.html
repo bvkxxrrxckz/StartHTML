@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>17</title>
+    <script src="../../script/jQuery.js"></script>
+</head>
+<body>
+
+<a href="http://wikipedia.ru">Wiki</a>
+
+
+<ul>
+    <li><a href="http://jquery.com">JQuery</a></li>
+    <li><a href="http://jqueryui.com">JQuery UI</a></li>
+    <li><a href="http://blog.jquery.com">JQuery BLOG</a></li>
+</ul>
+
+<script>
+    var links=$('li a');
+    links.each(function (i,a)
+    {
+        alert(i+": "+a.innerHTML);
+        if(i == 1) return false;
+    });
+</script>
+
+</body>
+</html>

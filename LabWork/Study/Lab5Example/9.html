@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9</title>
+    <script src="../../script/jQuery.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            $("#b1").click(function ()
+            {
+                $("p").toggle(2000);
+            });
+            $("#b2").click(function ()
+            {
+                $("p").show(1500);
+            });
+        });
+    </script>
+</head>
+<body>
+
+<button id="b1">TOGGLE</button>
+<p>This is a paragraph with little content.</p>
+<p>This is anouther small paragraph.</p>
+<button id="b2">SHOW</button>
+
+</body>
+</html>
