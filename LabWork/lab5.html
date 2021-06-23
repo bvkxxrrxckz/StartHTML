@@ -5,17 +5,16 @@
     <title>Работа с jQuery</title>
     <script src="script/jQuery.js"></script>
     <script>
-        $(document).ready(function ()
-        {
-            $("#b1").click(function ()
-            {
+        $(document).ready(function () {
+            $("#b1").click(function () {
                 $(".MsoNormal:odd").hide();
             })
-            $("#b2").click( function ()
-            {
+            $("#b2").click(function () {
                 $(".MsoNormal:odd").show();
             })
-            
+            $("td").click(function () {
+                $(this).hide();
+            })
         })
     </script>
 </head>
@@ -24,9 +23,20 @@
 <p class="MsoNormal">this is a paragraph</p>
 <p class="MsoNormal">this is a anouther paragraph</p>
 <p class="MsoNormal">this is a ЕЩЕ paragraph</p>
-<p class="MsoNormal">this is a  ЕЩЕ + ЕЩЕ anouther paragraph</p>
+<p class="MsoNormal">this is a ЕЩЕ + ЕЩЕ anouther paragraph</p>
 
 <button id="b1"> Click me (hide)</button>
 <button id="b2">Click me (show)</button>
+<table style="border-color: #333333" border="1">
+    <tr>
+        <td> 1.1</td>
+        <td> 1.2</td>
+    </tr>
+    <tr>
+        <td>2.1</td>
+        <td>2.2</td>
+    </tr>
+</table>
+
 </body>
 </html>
